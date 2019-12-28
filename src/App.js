@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+
+import About from './Components/About';
+import Header from './Components/Header';
+import Overview from './Components/Overview';
+import Project from './Components/Project';
+import {data} from './data';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+class App extends Component {
+    state = {
+      data: []
+    }
+    componentDidMount() {
+      this.setState({
+        data
+      })
+    }
+  
+  render() {
+        const { data } = this.state;
+    return (
+      <div id="container">
+        <Header />
+        <div id="app">
+          <Overview />
+          <About />
+          <h2 id="projects" class="section-title">Projects</h2>
+          {data.map(e => (
+            <Project key={e} data={e}/>
+          )) }
+        </div>
+      </div>
   );
-}
+  }
+    }
+
+  
+
 
 export default App;
