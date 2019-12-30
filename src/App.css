@@ -219,7 +219,6 @@ div.about-me div.terminal > div.terminal-window div.input-statement > span.termi
 }
 
 .projects-container .project-card .project-screenshot {
-  background:black;
   position: absolute;
   top: 0;
   left: 0;
@@ -235,7 +234,7 @@ div.about-me div.terminal > div.terminal-window div.input-statement > span.termi
   right: 0;
   height: 100%;
   width: 75%;
-  /* background: url('project-background.svg'); */
+  background: url('/images/project-background.svg');
   background-size: cover;
   display: block;
 }

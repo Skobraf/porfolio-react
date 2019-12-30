@@ -7,7 +7,7 @@ export const data = [
             demo: '',
             code: ''
         },
-        image: ''
+        image: '/images/2xu.PNG'
 
     }
 ]
