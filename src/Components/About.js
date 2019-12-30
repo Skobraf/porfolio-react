@@ -1,17 +1,23 @@
 import React from 'react';
 
-const About = () => {
+const About = ({ statements}) => {
 
     return (
-        <div class="about-me">
-          <div class="terminal">
-            <div class="terminal-header">
-              <div class="red-btn"></div>
-              <div class="yellow-btn"></div>
-              <div class="green-btn"></div>
+        <div className="about-me">
+          <div className="terminal">
+            <div className="terminal-header">
+              <div className="red-btn"></div>
+              <div className="yellow-btn"></div>
+              <div className="green-btn"></div>
             </div>
-            <div id="terminal-window" class="terminal-window">
-                JavaScript
+            <div id="terminal-window" className="terminal-window">
+                {statements.map(e => (
+                <div className="statement">
+                  <div className="input-statement" key={e.input}>{e.input}</div>
+                 <div className="return-statement" key={e.return}>{e.output}</div>
+                </div>
+                
+                ))}
             </div>
           </div>
         </div>
