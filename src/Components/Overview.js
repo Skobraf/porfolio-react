@@ -3,7 +3,7 @@ import React from 'react';
 const Overview = () => {
 
     return (
-        <div class="overview">
+        <div className="overview">
           <div className="title">
             <h1 id="typing" className="yes"></h1>
             <h1 className="not"><span>&nbsp;</span></h1>
