@@ -40,7 +40,7 @@ const Overview = () => {
             <h1 className="not">{name}<span>&nbsp;</span></h1>
           </div>
           <div className="description">
-            <p>I am a Front-End Developer based in Morocco. The goal for all my projects is to produce simple & beautiful user experiences. In my prior life, I worked as a Graphic designer with a background in Computer Science . Follow my progress by exploring my simple projects below.</p>
+            <p>I am a Web app developer based in Morocco. The goal for all my projects is to produce simple & beautiful user experiences. In my prior life, I worked as a Graphic designer with a background in Computer Science . Follow my progress by exploring my simple projects below.</p>
           </div>
         </div>
     )
