@@ -4,6 +4,7 @@ import About from './Components/About';
 import Header from './Components/Header';
 import Overview from './Components/Overview';
 import Project from './Components/Project';
+import Footer from './Components/Footer';
 import {data, statements} from './data';
 
 import './App.css';
@@ -32,6 +33,8 @@ class App extends Component {
           {data.map(e => (
             <Project key={e} data={e}/>
           )) }
+          <h2 id="contact" class="section-title">Contact me!</h2>
+          <Footer />
         </div>
       </div>
   );

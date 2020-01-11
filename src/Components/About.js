@@ -12,9 +12,9 @@ const About = ({ statements}) => {
             </div>
             <div id="terminal-window" className="terminal-window">
                 {statements.map(e => (
-                <div className="statement" >
-                  <div className="input-statement" key={e.input}>{e.input}</div>
-                 <div className="return-statement" key={e.return}>{e.output}</div>
+                <div key={e.input} className="statement" >
+                  <div className="input-statement" >{e.input}</div>
+                 <div className="return-statement" >{e.output}</div>
                 </div>
                 
                 ))}

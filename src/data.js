@@ -1,22 +1,77 @@
 import React from 'react';
 
 export const data = [
-    {
-        title: "Expensify App",
-        description: "Applied techniques learned from Andrew Mead's React course. understanding the concept of React and Redux and applying the skills i learnt helped me build much better foundation in React,Redux & JSX.",
-        skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript'],
+    {   id: 0,
+        title: "ReduxTagram",
+        description: "Small clone of instagram using React and Redux, where user is able to add commments and likes to posts and display posts from friends in the feed.",
+        skills: ['React', 'Redux', 'CSS', 'Express'],
         links: {
             demo: '',
-            code: ''
+            code: 'https://github.com/Skobraf/InstaClone/tree/master/learn-redux/client'
         },
-        image: '/images/2xu.PNG'
+        image: '/images/insta.PNG'
 
+    },
+    {
+      id:1,
+      title: 'Nested data access',
+      description: 'The idea is to be able to add, update or remove deep nested data without mutation and have the resulat as JSON . The app is using only React in addition to Immutable.js librarie.',
+      skills: ['React.js', 'Hooks', 'Immutable.js', 'CSS'],
+      links: {
+        demo: 'https://codesandbox.io/s/distracted-lake-mbpe5',
+        code: 'https://github.com/Skobraf/Sanad-test'
+      },
+      image: '/images/dataStructure.PNG'
+    },
+    {
+      id:2,
+      title: 'Career Center',
+      description: 'Single page app using Vue.js and VueX to handle the state, the user of the app needs to select the diplomas and exeperience he has, the it will match him with the available job offers, where he can also apply for these jobs. the app is smooth when it comes to navigation when switching between job categories.',
+      skills: ['Vue.js','VueX','Sass'],
+      links: {
+        demo: '',
+        code: 'https://github.com/Skobraf/Career-meeting'
+      },
+      image: '/images/career.PNG'
+    },
+    {
+      id:3,
+      title: 'Fetching github users',
+      description:'This project is to list the most starred repos of github in the last 30 days using github API, the project is made with REST API also with GraphQl Api from Github. it show the owner of the repo and the number of stars. for extra feature, The pagination is made using. NOTE: for QraphQl Api to work you need to have your own Token',
+      skills: ['React.js', 'Hooks', 'GraphqQl', 'REST Api'],
+      links: {
+        demo: 'https://codesandbox.io/s/p53kn3vwpj',
+        code: 'https://github.com/Skobraf/GraphQl-Github-API',
+      },
+      image: '/images/github.PNG'
+    },
+    {
+      id:4,
+      title:'Indecision App',
+      description: 'Simple app where you add your TODOS and then helps to make  decision from your previous choice.',
+      skills: ['React.js','CSS'],
+      links: {
+        demo: 'https://codesandbox.io/s/v0765q46v5',
+        code: 'https://codesandbox.io/s/v0765q46v5'
+      },
+      image: './images/indecision.PNG'
+    },
+    {
+      id:5,
+      title:'Sick Fits',
+      description: 'The app is from WesBos Advanced React course, The app is a store where the user sell his goods and manage project in addition to security for payment methods, for used technologies: Next.js, ApolloClient, Prisma, GraphQl for query.',
+      skills: ['Next.js','QraphQl','Express.js', 'Apollo', 'Prisma',],
+      links: {
+        demo:'',
+        code:'https://github.com/Skobraf/Next-Store'
+      },
+      image:'./images/fits.PNG'
     }
 ];
 export  const statements = [
-    {
+    { 
       input: 'Ayoub.currentLocation',
-      output: '["Ahfir", "Morocco"]'
+      output: "['Rabat', 'Morocco']"
     },
     {
       input: 'Ayoub.contactInfo',
@@ -24,14 +79,14 @@ export  const statements = [
     },
     {
       input: 'Ayoub.interests',
-      output: '["Programming", "Foot-ball", "Reading"]'
+      output: "['Programming', 'Moto-cycles', 'Reading']"
     },
     {
       input: 'Ayoub.education',
-      output: '["B.Sc. Science Engineering - University of Med First", "Oujda"]'
+      output: "['licence Mathématique informatique, Université Mohammed 1, Oujda']"
     },
     {
       input: 'Ayoub.skills',
-      output: '["Sass", "JavaScript","Ruby on Rails", "React", "Redux", "webpack", "git"]'
+      output: "['JavaScript', 'React', 'Redux', 'VueJs', 'VueX', 'NextJS', 'GATSBY', 'GraphQl', 'Ruby', 'Ruby on Rails', 'Wordpress' ]"
     }
   ];

@@ -21,8 +21,10 @@ const Project = ( {data }) => {
               </div>
               
               <div className="project-links">
-                <a target="_blank" href="https://github.com/Skobraf/React-Redux-Expensify-app" className="project-link">View code</a>
-                <a target="_blank" href="http://expensify.mead.io/" className="project-link">Explore demo</a>
+                <a target="_blank" href={links.code} className="project-link">View code</a>
+                {
+                links.demo.length> 1 && <a target="_blank" href={links.demo} className="project-link">Explore demo</a>
+                }
               </div>
             </div>
             </div>
