@@ -29,7 +29,7 @@ export const data = [
       description: 'Single page app using Vue.js and VueX to handle the state, the user of the app needs to select the diplomas and exeperience he has, the it will match him with the available job offers, where he can also apply for these jobs. the app is smooth when it comes to navigation when switching between job categories.',
       skills: ['Vue.js','VueX','Sass'],
       links: {
-        demo: '',
+        demo: 'https://careercenter-a030b0.netlify.com/',
         code: 'https://github.com/Skobraf/Career-meeting'
       },
       image: '/images/career.PNG'
