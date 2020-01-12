@@ -46,6 +46,17 @@ export const data = [
       image: '/images/github.PNG'
     },
     {
+      id:7,
+      title: 'Search Auto-suggest',
+      description: 'A search box displaying suggestion on each letter you write, the data is brought from the state, the data can also be reached by an API',
+      skills: ['React'],
+      links: {
+        demo: 'https://codesandbox.io/s/flamboyant-surf-vghqm',
+        code: 'https://github.com/Skobraf/Autocomplete-search',
+      },
+      image: './images/search.PNG'
+    },
+    {
       id:4,
       title:'Indecision App',
       description: 'Simple app where you add your TODOS and then helps to make  decision from your previous choice.',
